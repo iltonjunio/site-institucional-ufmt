@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <title>Univercidade Federeal de Mato Grosso</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href=""><img src="../img/logo.png" width="100px" height="100px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/campus.html">Câmpus</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/vestibulares.html">vestibulares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/formulario.html">Cadastro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="row m-5">
+            <div class="col-m-12">
+                <form class="was-validated needs-validated">
+                    <h1>Cadastro de Aluno</h1>
+                    <div class="mb-3">
+                        <label for="inputaluno" class="form-label">Aluno:</label>
+                        <input type="text" class="form-control" id="inputaluno" required>
+                        <div class="valid-feedback">
+                            OK
+                        </div>
+                        <div class="invalid-feedback">
+                            Erro, preencha corretamente.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputMatricula" class="form-label">Matricula:</label>
+                        <input type="text" class="form-control" id="inputMatricula" required>
+                        <div class="valid-feedback">
+                            ok
+                        </div>
+                        <div class="invalid-feedback">
+                            Erro, preencha corretamente.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputemail" class="form-label">E-mail: </label>
+                        <input type="email" class="form-control" id="inputemail" aria-describedby="emailHelp " required>
+                        <div id="emailHelp" class="form-text"></div>
+                        <div class="valid-feedback">
+                            ok
+                        </div>
+                        <div class="invalid-feedback">
+                            Erro, preencha corretamente.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputcpf" class="form-label">CPF: </label>
+                        <input type="text" class="form-control" id="inputcpf" required>
+                        <div id="emailHelp" class="form-text"></div>
+                        <div class="valid-feedback">
+                            ok
+                        </div>
+                        <div class="invalid-feedback">
+                            Erro, preencha corretamente.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="date" class="form-control" id="dataNascimento" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">sexo: </label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="inputsexo"
+                                required>
+                            <label class="form-check-label" for="inputsexo">Masculino</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="inputsexo" required>
+                        <label class="form-check-label" for="inputsexo">Femino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="inputsexo" required>
+                        <label class="form-check-label" for="inputsexo">Outros</label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dataNascimento">Nacionalidade:</label>
+                        <select class="form-select" multiple aria-label="multiple select example" required>
+                            <option selected>Brasil</option>
+                            <option value="1">Estados unidos</option>
+                            <option value="2">Canada</option>
+                            <option value="3">Mexico</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Coloque aqui seu documentos: </label>
+                        <label for="inputFile" class="form-label">Selecione </label>
+                        <input class="form-control" type="file" id="inputFile" required>
+                        <div class="valid-feedback">
+                            ok
+                        </div>
+                        <div class="invalid-feedback">
+                            Erro, preencha corretamente.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputFile" class="form-label">Selecione os Arquivos</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple required>
+                        <div class="valid-feedback">
+                            ok
+                    </div>
+                        <div class="invalid-feedback">
+                            Erro, preencha corretamente.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputFile" class="form-label">Selecione os Arquivos</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple required>
+                        <div class="valid-feedback">
+                            ok
+                    </div>
+                        <div class="invalid-feedback">
+                            Erro, preencha corretamente.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Cursos: </label>
+                        <select class="form-select" size="3" aria-label="size 3 select example" required>
+                            <option value="1">Administração.</option>
+                            <option value="2">Agronomia.</option>
+                            <option value="3">Arquitetura de Urbanismo. </option>
+                            <option value="3">Ciências Sociais</option>
+                            <option value="3">Ciências e tecnologia de alimentações.</option>
+                            <option value="3">Ciências biologicas.</option>
+                            <option value="3">Ciências contébeis.</option>
+                            <option value="3">Ciências economica.</option>
+                            <option value="3">Direitos.</option>
+                            <option value="3">Educação fisica.</option>
+                            <option value="3">Enfermagem.</option>
+                            <option value="3">Engeharia civil.</option>
+                            <option value="3">Engenharia eletrica.</option>
+                            <option value="3">Engeharia florestal.</option>
+                            <option value="3">Engenharia sanitaária e ambiente e tecnologia.</option>
+                            <option value="3">Estatística.</option>
+                            <option value="3">Filosofia.</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputcomentario" class="form-label">Deixe seu comentario:</label>
+                        <textarea class="form-control" id="inputcomentario" rows="4" required></textarea>
+                        <div class="valid-feedback">
+                            ok
+                        </div>
+                        <div class="invalid-feedback">
+                            Erro, preencha corretamente.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputavaliacao" class="form-label">Qual a sua avaliação:</label>
+                        <input type="range" class="form-range" min="0" max="5" id="inputavaliacao" required>
+                        <div class="valid-feedback">
+                            ok
+                        </div>
+                        <div class="invalid-feedback">
+                            Erro, preencha corretamente.
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="imputconfirma" required>
+                        <label class="form-check-label" for="imputconfirma">
+                            Vocé confirma os dados.
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                        <div class="valid-feedback">
+                            ok
+                        </div>
+                        <div class="invalid-feedback">
+                            Erro, preencha corretamente.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row bg-secondary text-center m-5 p-5">
+            <div class="col">
+                <h2>Reitor. Professor Evandro Aparecido Soares da Silva</h2>
+                <h3>Federal de Mato Grosso</h3>
+                <h5>
+                    Av. Edgar Vieira, 1057-1181 - Boa Esperança, Cuiabá - MT, 78068-600
+                    reitoria@ufmt.br
+                    Telefone: 3313-7118
+                </h5>
+                <div class="bg-secondary-subtle">
+                    Ilton Junio | 2023
+                </div>
+                <div class="bg-secondary-subtle">
+                    &#169; todos os direitos reservados
+                </div>
+            </div>
+    </footer>
+</body>
